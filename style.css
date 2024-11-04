@@ -356,9 +356,22 @@ nav ul li a:hover {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .container{
+    padding: 0 10px;
+  }
+  #hero{
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  #hero .content{
+    padding: 0;
+  }
+}
 @media screen and (max-width: 700px) {
   #about {
     flex-direction: column;
+    gap: 0;
   }
   #about > div:first-child {
     display: none;
