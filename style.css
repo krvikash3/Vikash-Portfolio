@@ -284,7 +284,7 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
-.image img{
+.image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -296,6 +296,7 @@ nav ul li a:hover {
 }
 
 #projects .card ul li a {
+  display: inline-block;
   padding: 4px 8px;
   background-color: rgba(12, 144, 91, 0.378);
   border-radius: 50px;
@@ -308,24 +309,15 @@ nav ul li a:hover {
   margin-bottom: 4px;
 }
 
-@media screen and (max-width: 600px) {
-  #projects .cards{
-    gap: 30px;
-  }
-
-  #projects .card {
-    flex-direction: column;
-  }
-}
-#qualification li{
-  display:flex;
+#qualification li {
+  display: flex;
   align-items: flex-start;
   gap: 16px;
   padding-bottom: 20px;
   position: relative;
 }
-#qualification li::before{
-  content: '';
+#qualification li::before {
+  content: "";
   position: absolute;
   height: 100%;
   width: 1px;
@@ -333,11 +325,11 @@ nav ul li a:hover {
   left: 14px;
   bottom: 0;
 }
-#qualification li:last-child::before{
+#qualification li:last-child::before {
   display: none;
 }
 
-#qualification li .icon{
+#qualification li .icon {
   width: 28px;
   flex-shrink: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.153), #44bd9554);
@@ -350,4 +342,25 @@ nav ul li a:hover {
   font-size: 18px;
   color: rgb(186, 197, 228);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  #projects .cards {
+    gap: 30px;
+  }
+  #projects .card .image {
+    width: 100%;
+  }
+  #projects .card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #about {
+    flex-direction: column;
+  }
+  #about > div:first-child {
+    display: none;
+  }
 }
