@@ -233,6 +233,9 @@ nav ul li a:hover {
 #about .cards .card .icon {
   width: 50px;
 }
+#about h2{
+  margin-bottom: 8px;
+}
 #about .content p {
   margin-bottom: 16px;
 }
@@ -263,17 +266,21 @@ nav ul li a:hover {
 #skills .cards {
   display: flex;
   gap: 10px;
+  
 }
 #projects .cards {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  
 }
 #projects .card {
   display: flex;
   align-items: flex-start;
   gap: 10px;
   overflow: hidden;
+    
+
 }
 #projects .card .image {
   border-radius: 5px;
