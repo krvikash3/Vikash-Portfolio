@@ -185,6 +185,7 @@ nav {
   width: 100%;
   background-color: var(--bg-dark);
   z-index: 999;
+  box-shadow: 0 2px 5px 0px #0000003e;
 }
 
 nav .container {
@@ -489,10 +490,10 @@ button:disabled {
 
 @media screen and (max-width: 600px) {
   nav{
-    padding: 10px;
+    padding: 12px 0;
   }
   nav ul{
-    gap: 0px;
+    gap: 2px;
   }
   #contact-form {
     grid-template-columns: 1fr;
@@ -528,6 +529,9 @@ button:disabled {
 
   #hero .content {
     padding: 0;
+  }
+  .profile-photo{
+    display: none;
   }
 }
 
