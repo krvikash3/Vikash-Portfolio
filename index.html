@@ -22,13 +22,16 @@
             <a class="text-muted" href="#about">About</a>
           </li>
           <li>
-            <a class="text-muted" href="#skill">Skill</a>
+            <a class="text-muted" href="#skills">Skill</a>
           </li>
           <li>
-            <a class="text-muted" href="#Projects">Projects</a>
+            <a class="text-muted" href="#projects">Projects</a>
           </li>
           <li>
-            <a class="text-muted" href="#Qualification">Qualification</a>
+            <a class="text-muted" href="#qualification">Qualification</a>
+          </li>
+          <li>
+            <a class="text-muted" href="#contact">Contact</a>
           </li>
         </ul>
         <div class="icon profile-photo">
@@ -38,9 +41,9 @@
     </nav>
 
     <div class="container">
-      <!-- =================================== -->
-      <!-- ============== HERO =============== -->
-      <!-- =================================== -->
+      <!-- ================================================= -->
+      <!-- ===================== HERO ====================== -->
+      <!-- ================================================= -->
       <section id="hero">
         <div class="content backdrop">
           <div>
@@ -112,9 +115,9 @@
         </div>
       </section>
 
-      <!-- =================================== -->
-      <!-- ============== ABOUT ============== -->
-      <!-- =================================== -->
+      <!-- ================================================= -->
+      <!-- ===================== ABOUT ===================== -->
+      <!-- ================================================= -->
       <section id="about">
         <div>
           <img src="./assets/avatar2.png" alt="" />
@@ -154,7 +157,11 @@
           </div>
         </div>
       </section>
-      
+
+      <!-- ================================================= -->
+      <!-- ===================== SKILLS ==================== -->
+      <!-- ================================================= -->
+
       <section id="skills">
         <h2>Skills!</h2>
 
@@ -181,6 +188,10 @@
           </div>
         </div>
       </section>
+
+      <!-- ================================================= -->
+      <!-- ==================== PROJECTS =================== -->
+      <!-- ================================================= -->
 
       <section id="projects">
         <h2>Projects!</h2>
@@ -299,6 +310,10 @@
         </div>
       </section>
 
+      <!-- ================================================= -->
+      <!-- ================ qualification ================== -->
+      <!-- ================================================= -->
+
       <section id="qualification">
         <h2>Qualification!</h2>
         <ul>
@@ -339,18 +354,30 @@
         </ul>
       </section>
 
+      <!-- ================================================= -->
+      <!-- ================= CONTACT ME ==================== -->
+      <!-- ================================================= -->
+
+      <section id="contact" class="container">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" name="name" id="fullname" placeholder="Full name" required>
+            <input type="email" name="email" id="email" placeholder="Email address" required>
+            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+        </form>
+        <button id="message-btn" class="gold">
+            <div class="icon">
+                <img src="./assets/icons/paper-plane.svg" alt="">
+            </div>
+            Send Message
+        </button>
+    </section>
+
     </div>
   </body>
 
-  <script src="./tilt.js"></script>
-  <script>
-    const light = document.querySelector(".light");
-    const offsetX = Math.floor(light.clientWidth / 2);
-    const offsetY = Math.floor(light.clientHeight / 2);
-
-    document.addEventListener("mousemove", (e) => {
-      light.style.top = e.clientY - offsetY + "px";
-      light.style.left = e.clientX - offsetX + "px";
-    });
-  </script>
+  <script src="./js/tilt.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/glanceLight.js"></script>
+  
 </html>
